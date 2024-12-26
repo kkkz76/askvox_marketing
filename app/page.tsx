@@ -9,6 +9,7 @@ import Testimonials from "@/components/section/Testimonials";
 export default function Home() {
   return (
     <>
+      <p>ok</p>
       <Header />
       <Hero />
       <Features />
