@@ -8,7 +8,7 @@ import clsx from "clsx";
 interface NavLinkProps {
   title: string;
 }
-const Header = () => {
+const FirstHeader = () => {
   const [hasScrolled, setHasScrolled] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -125,4 +125,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default FirstHeader;
