@@ -99,9 +99,13 @@ export const plans = [
     priceYearly: 0,
     caption: "For basic users",
     features: [
-      "10 Tokens per day",
-      "Running in background",
-      "Screen Overlay"
+      "Auto-renew: $1 credit per day",
+      "Wake-up Command",
+      "Text Generation",
+      "Web Search",
+      "Multimedia Generation",
+      "Voice Input & Response",
+      "Overlay Screen"
     ],
     icon: "/images/circle.svg",
     logo: "/images/plan-1.png",
@@ -112,9 +116,9 @@ export const plans = [
     priceMonthly: 10,
     caption: "For frequent users",
     features: [
-      "All Starter features",
-      "Unlimited usage",
-      "Discord integration"
+      "Includes all Free Plan features",
+      "Unlimited requests throughout the month",
+      "Best option for long-term use"
     ],
     icon: "/images/triangle.svg",
     logo: "/images/plan-2.png",
@@ -125,8 +129,13 @@ export const plans = [
     priceMonthly: 1,
     caption: "For one-time users",
     features: [
-      "All basic features",
-      "Tokens do not expire",
+      "Top up credit as needed",
+      "No monthly commitment",
+      "1 token = 4 characters",
+      "$0.003/1000 tokens for input",
+      "$0.015/1000 tokens for cache input",
+      "$0.006/1000 tokens for output",
+      "Best option for short-term use"
     ],
     icon: "/images/hexagon.svg",
     logo: "/images/plan-3.png",
