@@ -25,8 +25,8 @@ export const features: FeatureType[] = [
   {
     id: "1",
     icon: "/images/feature-2.png",
-    caption: "Secure & trustworthy",
-    title: "Sleep easy, we got your back",
+    caption: "Knowledgeble and reliable",
+    title: "Game on, we got your back",
     text: " Hands Full? No Problem! Just speak while gaming — AskVox display overlays answers, visuals, and videos right on your screen.",
     button: {
       icon: "/images/docs.svg",
