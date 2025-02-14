@@ -16,7 +16,7 @@ export const features: FeatureType[] = [
     icon: "/images/feature-1.png",
     caption: "Effective and efficient",
     title: "Brings your gaming to the next level",
-    text: "With AskVox, you can get the knowledge and information you need during mid-game with just speaking with it.",
+    text: "With Echo, you can get the knowledge and information you need during mid-game with just speaking with it.",
     button: {
       icon: "/images/magictouch.svg",
       title: "Watch the demo",
@@ -27,7 +27,7 @@ export const features: FeatureType[] = [
     icon: "/images/feature-2.png",
     caption: "Knowledgeble and reliable",
     title: "Game on, we got your back",
-    text: " Hands Full? No Problem! Just speak while gaming — AskVox display overlays answers, visuals, and videos right on your screen.",
+    text: " Hands Full? No Problem! Just speak while gaming — Echo display overlays answers, visuals, and videos right on your screen.",
     button: {
       icon: "/images/docs.svg",
       title: "Read the docs",
@@ -61,9 +61,9 @@ export const details = [
 export const faq = [
   {
     id: "0",
-    question: "How easy is it to setup AskVox?",
+    question: "How easy is it to setup Echo?",
     answer:
-      ""
+      "As easy as 1, 2, 3! Just start your game and start speaking to Echo.",
   },
   {
     id: "1",
@@ -79,15 +79,15 @@ export const faq = [
   },
   {
     id: "3",
-    question: "How does AskVox ensure the privacy and security of my data when using your app?",
+    question: "How does Echo ensure the privacy and security of my data when using your app?",
     answer:
-      "AskVox is committed to building trust in our organization and platform by protecting our customer and user data. AskVox supports our customers’ compliance with privacy laws, including the GDPR and PDPA.",
+      "Echo is committed to building trust in our organization and platform by protecting our customer and user data. Echo supports our customers’ compliance with privacy laws, including the GDPR and PDPA.",
   },
   {
     id: "4",
     question: "I’m locked out of my account what do I do?",
     answer:
-      "Contact admin to resolve this is",
+      "Contact our admin to resolve this!",
   }
 ];
 
@@ -109,6 +109,7 @@ export const plans = [
     ],
     icon: "/images/circle.svg",
     logo: "/images/plan-1.png",
+    link: 'https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv',
   },
   {
     id: "1",
@@ -122,6 +123,7 @@ export const plans = [
     ],
     icon: "/images/triangle.svg",
     logo: "/images/plan-2.png",
+    link: 'https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv'
   },
   {
     id: "2",
@@ -139,9 +141,11 @@ export const plans = [
     ],
     icon: "/images/hexagon.svg",
     logo: "/images/plan-3.png",
+    link: 'https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv'
   },
 ];
 
+/*
 export const testimonials = [
   {
     id: "0",
@@ -149,7 +153,7 @@ export const testimonials = [
     role: "Globalnomads",
     avatarUrl: "/images/testimonials/jessica-saunders.png",
     comment:
-      "AskVox's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+      "Echo's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
   },
   {
     id: "1",
@@ -165,7 +169,7 @@ export const testimonials = [
     role: "Cyberleap",
     avatarUrl: "/images/testimonials/melanie-hurst.png",
     comment:
-      "AskVox allows a smoother game play without the need of gettig out of tabs in between games",
+      "Echo allows a smoother game play without the need of getting out of tabs in between games",
   },
   {
     id: "3",
@@ -192,6 +196,8 @@ export const testimonials = [
       "The efficiency boost is undeniable. This platform has transformed our workflow, forever.",
   },
 ];
+
+*/
 
 export const logos = [
   {
@@ -231,6 +237,7 @@ export const logos = [
   },
 ];
 
+/*
 export const Ios: React.FC = () => {
   return (
     <svg
@@ -309,6 +316,7 @@ export const Windows = () => {
     </svg>
   );
 };
+*/
 
 export const Web = () => {
   return (
@@ -360,26 +368,9 @@ export const Web = () => {
 };
 
 export const links = [
+
   {
     id: "0",
-    title: "Ios",
-    icon: <Ios />,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Android",
-    icon: <Android />,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Windows",
-    icon: <Windows />,
-    url: "#",
-  },
-  {
-    id: "3",
     title: "Web",
     icon: <Web />,
     url: "#",

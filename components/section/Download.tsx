@@ -16,41 +16,16 @@ const Download = () => {
             <div className="relative mr-6 flex-540 max-xl:flex-280 max-lg:flex256 max-md:flex-100">
               <div className="mb-10">
                 <img
-                  src="/images/xora.svg"
-                  width={160}
-                  height={55}
-                  alt="xora"
+                  src="/images/echo.ico"
+                  width={100}
+                  height={35}
+                  alt="Echo"
                 />
               </div>
 
               <p className="body-1 mb-10 max-w-md">
-                Try it now for free on iOS, Android, PC, Web - whatever your
-                flavor, we&apos;ve got you covered.
+                Echo - Your Personal AI Knowledge Assistant for Gaming
               </p>
-
-              <ul className="flex flex-wrap items-center gap-6">
-                {links.map(({ id, url, icon }) => (
-                  <li
-                    key={id}
-                    className="download_tech-link download_tech-link_last-before download_tech-link_last-after"
-                  >
-                    <a
-                      href={url}
-                      className="size-22 download_tech-icon_before relative flex items-center justify-center rounded-half border-2 border-s3 bg-s1 transition-borderColor duration-500"
-                    >
-                      <span className="absolute -top-2 rotate-90">
-                        <Marker />
-                      </span>
-                      <img
-                        src={"/images/lines.svg"}
-                        alt="lines"
-                        className="absolute size-13/20 object-contain"
-                      />
-                      <span className="download_tech-icon">{icon}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </div>
 
             <div className="mb-10 max-md:hidden">
@@ -61,7 +36,7 @@ const Download = () => {
                   <span className="download_preview-dot left-16 bg-p1/15" />
 
                   <img
-                    src="/images/screen.jpg"
+                    src="/images/echoUI.png"
                     width={800}
                     height={600}
                     alt="screen"
@@ -72,13 +47,6 @@ const Download = () => {
             </div>
           </div>
 
-          <ul className="mt-24 flex justify-center max-lg:hidden">
-            {logos.map(({ id, url, width, height, title }) => (
-              <li key={id} className="mx-10">
-                <img src={url} width={width} height={height} alt={title} />
-              </li>
-            ))}
-          </ul>
         </div>
       </Element>
     </section>

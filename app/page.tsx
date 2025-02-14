@@ -4,7 +4,6 @@ import Features from "@/components/section/Features";
 import FirstHeader from "@/components/section/FirstHeader";
 import Hero from "@/components/section/Hero";
 import Pricing from "@/components/section/Pricing";
-import Testimonials from "@/components/section/Testimonials";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
       <Features />
       <Pricing />
       <Faq />
-      <Testimonials />
       <Download />
     </>
   );

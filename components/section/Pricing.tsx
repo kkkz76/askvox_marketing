@@ -128,7 +128,9 @@ const Pricing = () => {
                 </ul>
 
                 <div className="mt-10 flex w-full justify-center">
-                  <Button icon={plan.icon}>Get Started</Button>
+                  <a href={plan.link} target="_blank" rel="noopener noreferrer">
+                    <Button icon={plan.icon}>Get Started</Button>
+                  </a>
                 </div>
               </div>
             ))}

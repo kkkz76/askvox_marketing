@@ -5,6 +5,7 @@ import { Element } from "react-scroll";
 import { Link as LinkScroll } from "react-scroll";
 import Button from "../ui/Button";
 import Image from "next/image";
+import Link from "next/link"; 
 
 const Hero = () => {
   return (
@@ -19,11 +20,11 @@ const Hero = () => {
             Knowledge at your command
             </h1>
             <p className="max-w-440 mb-14 body-1 max-md:mb-10">
-            We designed AskVox, the AI-powered knowledge assistant, to deliver real-time information to gamers. Get instant answers, images, and videos without ever leaving your game—so you stay focused and in control.
+            We designed Echo, the AI-powered knowledge assistant, to deliver real-time information to gamers. Get instant answers, images, and videos without ever leaving your game—so you stay focused and in control.
             </p>
-            <LinkScroll to="features" offset={-100} spy smooth>
+            <Link href="https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv" passHref>
               <Button icon="/images/zap.svg">Try it now</Button>
-            </LinkScroll>
+            </Link>
           </div>
           <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
             <Image

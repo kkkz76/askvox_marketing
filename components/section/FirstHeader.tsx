@@ -48,8 +48,7 @@ const FirstHeader = () => {
       <div className="container flex h-14 items-center max-lg:px-5">
   <Link className="lg:hidden flex-1 cursor-pointer z-2" href={"/"}>
     <span style={{ fontSize: '24px', fontWeight: 'bold' }}>
-      <span style={{ color: '#FFFFFF', opacity: 0.8 }}>Ask</span>
-      <span style={{ color: '#4C4DBC', opacity: 1 }}>Vox</span>
+      <span style={{ color: '#FFFFFF', opacity: 0.8 }}>Echo</span>
     </span>
   </Link>
   <div
@@ -77,8 +76,7 @@ const FirstHeader = () => {
               )}
             >
               <span style={{ fontSize: '24px', fontWeight: 'bold' }}>
-                <span style={{ color: '#FFFFFF', opacity: 0.8 }}>Ask</span>
-                <span style={{ color: '#4C4DBC', opacity: 1 }}>Vox</span>
+                <span style={{ color: '#FFFFFF', opacity: 1 }}><b>Echo</b></span>
               </span>
             </LinkScroll>
           </li>
