@@ -10,6 +10,12 @@ interface FeatureType {
   };
 }
 
+export enum PLATFORM_TYPE {
+  WINDOW = "WINDOW",
+  MAC = "MAC",
+  LINUX = "LINUX",
+}
+
 export const features: FeatureType[] = [
   {
     id: "0",
@@ -79,16 +85,16 @@ export const faq = [
   },
   {
     id: "3",
-    question: "How does Echo ensure the privacy and security of my data when using your app?",
+    question:
+      "How does Echo ensure the privacy and security of my data when using your app?",
     answer:
       "Echo is committed to building trust in our organization and platform by protecting our customer and user data. Echo supports our customers’ compliance with privacy laws, including the GDPR and PDPA.",
   },
   {
     id: "4",
     question: "I’m locked out of my account what do I do?",
-    answer:
-      "Contact our admin to resolve this!",
-  }
+    answer: "Contact our admin to resolve this!",
+  },
 ];
 
 export const plans = [
@@ -105,11 +111,11 @@ export const plans = [
       "Web Search",
       "Multimedia Generation",
       "Voice Input & Response",
-      "Overlay Screen"
+      "Overlay Screen",
     ],
     icon: "/images/circle.svg",
     logo: "/images/plan-1.png",
-    link: 'https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv',
+    link: "https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv",
   },
   {
     id: "1",
@@ -119,11 +125,11 @@ export const plans = [
     features: [
       "Includes all Free Plan features",
       "Unlimited requests throughout the month",
-      "Best option for long-term use"
+      "Best option for long-term use",
     ],
     icon: "/images/triangle.svg",
     logo: "/images/plan-2.png",
-    link: 'https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv'
+    link: "https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv",
   },
   {
     id: "2",
@@ -137,11 +143,11 @@ export const plans = [
       "$0.003/1000 tokens for input",
       "$0.015/1000 tokens for cache input",
       "$0.006/1000 tokens for output",
-      "Best option for short-term use"
+      "Best option for short-term use",
     ],
     icon: "/images/hexagon.svg",
     logo: "/images/plan-3.png",
-    link: 'https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv'
+    link: "https://drive.google.com/drive/u/0/folders/1EKX-qmaWhtsLU4nnkQ_T0uyXaqJZEmCv",
   },
 ];
 
@@ -368,7 +374,6 @@ export const Web = () => {
 };
 
 export const links = [
-
   {
     id: "0",
     title: "Web",
