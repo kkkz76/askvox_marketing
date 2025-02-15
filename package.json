@@ -11,18 +11,19 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.48.1",
     "clsx": "^2.1.1",
+    "module-alias": "^2.2.3",
     "next": "15.1.2",
+    "punycode": "^2.3.1",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
-    "react-scroll": "^1.9.0",
-    "react-slidedown": "^2.4.7"
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@types/react-scroll": "^1.8.10",
     "eslint": "^9",
     "eslint-config-next": "15.1.2",

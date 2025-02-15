@@ -1,7 +1,5 @@
 import clsx from "clsx";
 import { useState } from "react";
-import { SlideDown } from "react-slidedown";
-import "react-slidedown/lib/slidedown.css";
 
 interface FaqItemProps {
   item: {
@@ -14,16 +12,13 @@ interface FaqItemProps {
 
 const FaqItem = ({ item, index }: FaqItemProps) => {
   const [activeId, setActiveId] = useState<string | null>(null);
-
   const active = activeId === item.id;
 
   return (
     <div className="relative z-2 mb-16">
       <div
         className="group relative flex cursor-pointer items-center justify-between gap-10 px-7"
-        onClick={() => {
-          setActiveId(activeId === item.id ? null : item.id);
-        }}
+        onClick={() => setActiveId(active ? null : item.id)}
       >
         <div className="flex-1">
           <div className="small-compact mb-1.5 text-p3 max-lg:hidden">
@@ -50,11 +45,15 @@ const FaqItem = ({ item, index }: FaqItemProps) => {
         </div>
       </div>
 
-      <SlideDown>
-        {activeId === item.id && (
-          <div className="body-3 px-7 py-3.5">{item.answer}</div>
+      {/* Native CSS Transition */}
+      <div
+        className={clsx(
+          "overflow-hidden transition-[max-height] duration-500 ease-in-out",
+          active ? "max-h-40" : "max-h-0"
         )}
-      </SlideDown>
+      >
+        <div className="body-3 px-7 py-3.5">{item.answer}</div>
+      </div>
 
       <div
         className={clsx(
@@ -68,4 +67,5 @@ const FaqItem = ({ item, index }: FaqItemProps) => {
     </div>
   );
 };
+
 export default FaqItem;

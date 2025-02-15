@@ -4,11 +4,8 @@ import Features from "@/components/section/Features";
 import FirstHeader from "@/components/section/FirstHeader";
 import Hero from "@/components/section/Hero";
 import Pricing from "@/components/section/Pricing";
-import { createWebVisitData } from "@/services/query";
 
 export default async function Home() {
-  await createWebVisitData();
-
   return (
     <>
       <FirstHeader />

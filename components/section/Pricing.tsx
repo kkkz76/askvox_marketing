@@ -5,12 +5,11 @@ import { Element } from "react-scroll";
 import clsx from "clsx";
 import CountUp from "react-countup";
 
-import Button from "../ui/Button";
-import { useState } from "react";
 import { plans } from "../constants";
+import Button from "../ui/Button";
 
 const Pricing = () => {
-  const [monthly, setMonthly] = useState(false);
+  // const [monthly, setMonthly] = useState(false);
 
   return (
     <section>
@@ -90,7 +89,7 @@ const Pricing = () => {
                       ${" "}
                       <CountUp
                         start={plan.priceMonthly}
-                        end= {plan.priceMonthly}
+                        end={plan.priceMonthly}
                         duration={0.4}
                         useEasing={false}
                         preserveValue

@@ -1,6 +1,5 @@
 import { PLATFORM_TYPE } from "@/components/constants";
-
-export const baseUrl = process.env.NEXT_PUBLIC_URL || "http://localhost:3000";
+import { baseUrl } from "@/utility/utility";
 
 export async function createFileDownloadData(
   platform: PLATFORM_TYPE

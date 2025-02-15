@@ -1,9 +1,9 @@
 import { supabase } from "@/supabaseClient";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   try {
-    let { data, error } = await supabase
+    const { data, error } = await supabase
       .from("ProductDownload")
       .select("link") // Select only the 'link' field
       .eq("id", 1) // Filter where id = 1

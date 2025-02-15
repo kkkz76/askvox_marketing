@@ -1,7 +1,6 @@
 "use client";
 import { Element } from "react-scroll";
-import { details, features } from "../constants";
-import Button from "../ui/Button";
+import { features } from "../constants";
 
 const Features = () => {
   return (
@@ -17,7 +16,7 @@ const Features = () => {
               loop
               muted
             >
-              <source src="/videos/MarketingVideo.MP4" type="video/MP4" />
+              <source src="/videos/MarketingVideo.mp4" type="video/MP4" />
               Your browser does not support the video tag.
             </video>
           </div>

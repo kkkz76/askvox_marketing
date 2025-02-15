@@ -5,22 +5,38 @@ import Link from "next/link";
 import { Element } from "react-scroll";
 import { PLATFORM_TYPE } from "../constants";
 import Button from "../ui/Button";
-import { createFileDownloadData, fetchLink } from "@/services/query";
+import {
+  createFileDownloadData,
+  createWebVisitData,
+  fetchLink,
+} from "@/services/query";
 import { useEffect, useState } from "react";
 
+async function onDownload(platform: PLATFORM_TYPE) {
+  await createFileDownloadData(platform);
+}
 const Hero = () => {
   const [newLink, setNewLink] = useState("");
   useEffect(() => {
     const loadLink = async () => {
-      const oldLink = await fetchLink();
-      setNewLink(oldLink || "");
+      try {
+        const oldLink = await fetchLink();
+        setNewLink(oldLink || "");
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    const addViewCount = async () => {
+      try {
+        await createWebVisitData();
+      } catch (error) {
+        console.log(error);
+      }
     };
     loadLink();
+    addViewCount();
   }, []);
 
-  async function onDownload(platform: PLATFORM_TYPE) {
-    await createFileDownloadData(platform);
-  }
   return (
     <section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 overflow-hidden">
       <Element name="hero">

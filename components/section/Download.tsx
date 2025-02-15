@@ -1,8 +1,6 @@
 "use client";
 
 import { Element } from "react-scroll";
-import { links, logos } from "../constants";
-import Marker from "../ui/Marker";
 
 const Download = () => {
   return (
@@ -46,7 +44,6 @@ const Download = () => {
               </div>
             </div>
           </div>
-
         </div>
       </Element>
     </section>

@@ -12,12 +12,10 @@ const getGeolocation = async (ipAddress: string) => {
 export async function POST(req: NextRequest) {
   const data = await req.json();
 
-  const ipAddress =
-    req.headers.get("x-forwarded-for") || req.headers.get("remote-addr");
-
-  const geoInfo = ipAddress ? await getGeolocation(ipAddress) : null;
-
   try {
+    const ipAddress =
+      req.headers.get("x-forwarded-for") || req.headers.get("remote-addr");
+    const geoInfo = ipAddress ? await getGeolocation(ipAddress) : null;
     const { data: newDownload, error: savedDownloadError } = await supabase
       .from("DownloadStatus")
       .insert([
