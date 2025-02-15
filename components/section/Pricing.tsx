@@ -7,9 +7,24 @@ import CountUp from "react-countup";
 
 import { plans } from "../constants";
 import Button from "../ui/Button";
+import { useEffect, useState } from "react";
+import { fetchLink } from "@/services/query";
 
 const Pricing = () => {
   // const [monthly, setMonthly] = useState(false);
+  const [newLink, setNewLink] = useState("");
+
+  useEffect(() => {
+    const loadLink = async () => {
+      try {
+        const oldLink = await fetchLink();
+        setNewLink(oldLink || "");
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    loadLink();
+  }, []);
 
   return (
     <section>
@@ -127,7 +142,7 @@ const Pricing = () => {
                 </ul>
 
                 <div className="mt-10 flex w-full justify-center">
-                  <a href={plan.link} target="_blank" rel="noopener noreferrer">
+                  <a href={newLink} target="_blank" rel="noopener noreferrer">
                     <Button icon={plan.icon}>Get Started</Button>
                   </a>
                 </div>
